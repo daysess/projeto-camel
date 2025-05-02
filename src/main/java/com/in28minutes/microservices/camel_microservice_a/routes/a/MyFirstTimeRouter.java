@@ -1,4 +1,4 @@
-package com.in28minutes.microservices.camel_microservice_a.routes;
+package com.in28minutes.microservices.camel_microservice_a.routes.a;
 
 import java.time.LocalDateTime;
 
@@ -25,19 +25,19 @@ public class MyFirstTimeRouter extends RouteBuilder{
         // transformation
         // log
         // Exchange[ExchangePattern: InOnly, BodyType: null, Body: [Body is null]]
-        from("timer:first-timer")
-         .transform().constant("My constant message")
+        // from("timer:first-timer")
+        //  .transform().constant("My constant message")
         // .transform().constant("Time now is "+LocalDateTime.now())
         // .bean("getCurrentTimeBean")
-        .log("${body}")
-        .bean(loggingComponent)
-        .log("${body}")
+        // .log("${body}")
+        // .bean(loggingComponent)
+        // .log("${body}")
 
         // Processing
         // Transformation
-        .bean(getCurrentTimeBean)
-        .process(new SimpleLoggingProcessor())
-        .to("log:first-timer");
+        // .bean(getCurrentTimeBean)
+        // .process(new SimpleLoggingProcessor())
+        // .to("log:first-timer");
     }
     
 }
@@ -63,7 +63,7 @@ class SimpleLoggingProcessor implements Processor {
 
     @Override
     public void process(Exchange exchange) throws Exception {
-        logger.info("SimpleLoggingProcessor {}", exchange);
+        logger.info("SimpleLoggingProcessor {}", exchange.getMessage().getBody());
     }
     
 }
