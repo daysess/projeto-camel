@@ -1,1 +1,7 @@
+com/in28minutes/microservices/camel_microservice_a/routes/a/MyFirstTimeRouter.class
 com/in28minutes/microservices/camel_microservice_a/CamelMicroserviceAApplication.class
+com/in28minutes/microservices/camel_microservice_a/routes/c/ActiveMqSenderRouter.class
+com/in28minutes/microservices/camel_microservice_a/routes/b/MyFileRouter.class
+com/in28minutes/microservices/camel_microservice_a/routes/a/SimpleLoggingProcessingCompenent.class
+com/in28minutes/microservices/camel_microservice_a/routes/a/SimpleLoggingProcessor.class
+com/in28minutes/microservices/camel_microservice_a/routes/a/GetCurrentTimeBean.class

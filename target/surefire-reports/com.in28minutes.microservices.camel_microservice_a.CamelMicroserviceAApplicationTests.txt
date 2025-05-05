@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.in28minutes.microservices.camel_microservice_a.CamelMicroserviceAApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.374 s -- in com.in28minutes.microservices.camel_microservice_a.CamelMicroserviceAApplicationTests
